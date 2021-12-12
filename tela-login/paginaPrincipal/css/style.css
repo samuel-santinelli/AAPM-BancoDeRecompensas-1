@@ -28,7 +28,7 @@ header{
     margin-left: auto;
     width: 1400px;
     height: inherit;
-   background-color:#ffffff;
+   /* background-color:blue; */
  
 }
 
@@ -160,4 +160,105 @@ input::placeholder {
     box-shadow:0px 3px 13px #bfbfbf;
 }
 
+#produtos{
+       /* background-color:red; */
+        min-height: 1500px;
+        height: auto;
+        width: 1400px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* margin-top: 12px; */
+        overflow: auto;
+    }
+    
+    .cards{
+        width: 430px;
+        height:auto;
+        min-height: 520px;
+        overflow: auto;
+        float: left;
+       margin-left: 27px;
+        margin-bottom: 10px;
+        /* background-color:blue; */
+        box-shadow:0px 20px 15px #cfcfcf;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+    
+    .imgCard{
+        width: 390px;
+        height: inherit;
+        display: flex;
+        margin-left: 10px;
+        margin-top: 12px;
+       background-color: aqua;
+    }
+    
+    .cards:hover{
+         /* transform: scale(1.1); */
+        transition: 1s;
+          cursor: pointer;
+        
+    }
+    
+    
+    .imagemCards{
+        width:inherit;
+        height: 220px;
+        /* background-attachment: fixed;
+        background-position: center; */
+    }
+    
+    
+    .sobreProduto{
+        background-color: tomato;
+        height:220px;
+        width: inherit;
+        margin-top: 10px;
+    
+    }
 
+    .preco{
+        margin-top: 10px;
+    }
+    .moeda{
+        float: left;
+        padding-left: 30px;
+    }
+    .precoMoeda{
+        float: left;
+        color: khaki;
+        padding-left: 13px;
+        padding-top: 5px;
+        font-size: 1.8em;
+    }
+
+    h3{
+        font-size: 1.2em;
+        color: black;
+        font-family: verdana;;
+    }
+
+    .nomeProduto{
+        width: inherit;
+        margin-top: 10px;
+        height: 40px;
+        margin-bottom:20px;
+      padding-top: 10px;
+    padding-left: 30px;
+       /* background-color: darkred; */
+       clear: both;
+    }
+
+    .adicionar{
+        /* background-color: lawngreen; */
+    }
+    .btnAdicionar{
+        width: 100px;
+        border: 0;
+        color: #ffffff;
+        height: 30px;
+        border-radius: 300px;
+        background-color: blue;
+        margin-left: 30px;
+    }
