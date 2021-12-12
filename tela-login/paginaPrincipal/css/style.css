@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+
+header{
+    width: 100%;
+    height: 70px;
+    /* background-color:#000; */
+    position: fixed;
+   
+    
+}
+
+.conteudo{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1400px;
+    height: inherit;
+   background-color:#ffffff;
+   box-shadow:0px 3px 13px #cfcfcf;
+}
+.conteudoBanner{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1400px;
+    height: inherit;
+   background-color:#ffffff;
+ 
+}
+
+#logo{
+    width: 150px;
+    height: inherit;
+    /* background-color: khaki; */
+    float: left;
+   
+}
+
+#imgLogo{
+    width:120px;
+    height: inherit;
+    margin-left: 25px;
+}
+
+
+#carrinho{
+    width: 100px;
+    height: inherit;
+    /* background-color: lightcoral; */
+    margin-right: 100px;
+    float:left;
+     margin-left: 875px;
+}
+
+#imgCarrinho{
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 35px;
+    
+}
+
+#login{
+    width: 120px;
+    height: inherit;
+    /* background-color: lawngreen; */
+    float: right;
+  
+    margin-right: 50px;
+}
+
+#btnLogin{
+    background: red;
+    color: white;
+    height: 50px;
+    width: 120px;
+    font: bold 15px arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: none;
+}
+
+#btnLogin:hover{
+    cursor: pointer;
+    /* background-color: #cccccc; */
+}
+
+.banner{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    /* background-image: url(../img/banner1.jpg); */
+
+}
+.imagem{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    
+}
+
+#uniao{
+    width: inherit;
+    height: 50px;
+    /* background-color: blueviolet; */
+}
+
+
+#pesquisar{
+    width: 500px;
+    height: 55px;
+    /* background-color: firebrick; */
+    float: left;
+    margin-top: 10px;
+    margin-left: 300px;
+ 
+}
+input::placeholder {
+    color: #c4c4c4;
+      font-size: 1.2em;
+      padding-left: 50px;
+  }
+#iptPesquisar{
+    border: none;
+    outline: none;
+    width: inherit;
+    height: 30px;
+    /* background-color: khaki; */
+    border-radius: 300px;
+    box-shadow:0px 3px 13px #bfbfbf;
+    background-image: url(../img/pesquisar.PNG);
+    background-repeat: no-repeat;
+   
+}
+#sltFiltro{
+    width: 100px;
+    height: 50px;
+    /* background-color: fuchsia; */
+    float: right;
+    margin-right: 100px;
+    padding-right: 100px;
+}
+
+#filtro{
+    background-color: #ffffff;
+    color: black;
+    outline: none;
+    width: 130px;
+    height: 20px;
+    margin-top: 15px;
+    border:none;
+    
+    box-shadow:0px 3px 13px #bfbfbf;
+}
+
+
