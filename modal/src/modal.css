@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;    
+    
+}
+
+body{
+    background-color: #ffffff;
+    overflow-x: hidden;
+    flex-direction: column;
+    display: flex;
+    
+}
+
+#content-banner{
+    width: 100%;
+    height: 550px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 100px;
+    background-size: cover;
+}
+
+#title{
+    width: auto;
+    height: 80px;
+    padding-left: 370px;
+    padding-top: 15px;    
+    float: left;
+}
+
+#price{
+    margin-left: 175px;
+}
+
+h1{
+    color: #000;
+    font-size: 2.0rem;
+  
+}
+
+h2{
+    color: #000;
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+p{
+    color: #B1B1B1;
+    font-size: 1.2rem;
+    padding-top: 25px;
+    
+}
+
+p2{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+h3{
+    color: #FFCD48;
+    float: right;
+    font-size: 1.4rem;
+    margin-right: 795px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+img{
+  width: 40px;
+    
+}
+
+#money-icon{
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 38px;
+}
+
+#icon-car{
+    height: 40px;
+    width: 40px;
+}
+
+#the-amount{
+    padding-top: 10px;
+}
+
+
+#input-buy{
+    height: 40px;
+    width: 500px;
+    background-color: #0057FF;
+    font-size: 1.2rem;
+    border: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px  -3px;
+     margin-left: 100px;
+}
+
