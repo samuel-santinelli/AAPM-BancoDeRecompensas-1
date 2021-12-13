@@ -12,7 +12,7 @@ const imageToBase = (arquivo) => {
 		}
 
 		fr.onerror = function(){
-			reject(undefined)
+			reject()
 		}
 
 		fr.readAsDataURL(arquivo)
