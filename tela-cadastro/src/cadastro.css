@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;    
+    
+}
+
+body{
+    background-color: #000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-image: url("../pictures/imagem-fundo.PNG");
+}
+
+main{
+    min-height: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+
+#banner{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+#content-logo{
+    height: 230px;
+    width: 610px;
+    float: right;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 57px;
+}
+
+
+#logotipo-aapm{
+    height: 230px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+h1{
+    font-size: 1.5rem;
+    padding-left: 30px;
+}
+
+input{
+    height: 50px;
+    width: 300px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 0px;
+    border-bottom: solid 1px #B1B1B1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    margin-right: 10px;
+}
+
+.contents-inputs{
+    height: 500px;
+    width: 100%;
+    color: #fff;
+}
+
+#content-button{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: end;
+
+}
+
+button{
+    height: inherit;
+    width: 150px;
+    color: #fff;
+    background-color: transparent;
+    border: solid 2px #0074B5;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+button:hover{
+    border: solid 1px tomato;
+    transition: 2s;
+    cursor: pointer;
+}
+
+#content-footer{
+    margin-left: 200px;
+    padding-top: 100px;
+}
+
+p2{
+    color: #0074B5;
+    font-weight: bold;
+}
+
+p2:hover{
+    cursor: pointer;
+
+}
+
+h3{
+    padding-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #B1B1B1;
+}
+
+#erroSenhaForca{
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+placeholder{
+    color: #B1B1B1;
+}
+
+
+#nome-email{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.senhas{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.senhas > input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.senhas > input::placeholder {
+    font-weight: normal;
+    opacity: 40%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.senhas > :placeholder-shown ~ label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+    
+}
+
+.senhas > label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    z-index: -1;
+}
+
+.senhas > :focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #0074B5, #0074B5);
+    border-image-slice: 1;
+}
+
+#senhaForca{
+    color: #B1B1B1;
+}
