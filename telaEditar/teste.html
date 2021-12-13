@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+        .hoshi {
+            position: relative;
+            padding: 15px 0 0;
+            margin-top: 15px;
+            float: left;
+            margin-left: 200px;
+            margin-bottom: 80px;
+            
+           
+        }
+
+        .hoshi > input {
+            font-family: inherit;
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid gray;
+            outline: 0;
+            font-size: 1.3rem;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+            
+        }
+
+        .hoshi > input::placeholder {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        #nameC{
+            width: 700px;
+        }
+
+        .hoshi > :placeholder-shown ~ label {
+            font-size: 1.3rem;
+            cursor: text;
+            top: 20px;
+        }
+
+        .hoshi > label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            z-index: -1;
+        }
+
+        .hoshi > :focus {
+
+            padding-bottom: 6px;
+            font-weight: 700;
+            border-width: 3px;
+            border-image: linear-gradient(to right, red, blue);
+            border-image-slice: 1;
+        }
+
+        .hoshi > [placeholder]:focus ~ * {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: red;
+            font-weight: 700;
+        }
+
+        /* reset input */
+        .hoshi > [placeholder]:required,
+        .hoshi > [placeholder]:invalid {
+            box-shadow: none;
+        }
+       
+
+        
+
+
+
+#person{
+    padding-top: 50px;
+     width: 250px;
+    height: 250px;
+     margin: auto;
+     border-radius: 500px;
+   
+    
+}
+
+#perfil{
+    width: inherit;
+    height: inherit;
+    background-color: blue;
+    border-radius: 500px;
+   margin: auto;
+    position:relative;
+    
+   
+    
+    
+}
+
+
+
+#dados{
+    margin-top: 20px;
+   margin-left: 780px;
+   
+    
+}
+#edita{
+    border: 0;
+    margin-top: 5px;
+
+}
+
+
+        
+
+    
+
+        </style>
+</head>
+
+<body>
+        
+        <div id="person">
+        <img id="perfil" src="img/imagen.jpeg">  
+         </div>
+
+         <div id="dados">
+            <h1>Usuario</h1>  
+            <button id="edita">EDITAR FOTO</button>
+          </div>
+
+
+
+         
+            <div class="hoshi">
+                <input type="text"  placeholder=" " required />
+                <label>Nick</label>
+            </div>
+        
+            <div class="hoshi">
+                <input type="text"  placeholder=" " required />
+                <label>Email</label>
+            </div>
+        
+            <div class="hoshi">
+                <input type="text"  placeholder=" " required />
+                <label>Numero da matricula</label>
+            </div>
+        
+            <div class="hoshi" id="nameC">
+                <input type="text"  placeholder=" " required />
+                <label>Nome Completo</label>
+            </div>
+        
+            <div class="hoshi">
+                <input type="text"  placeholder=" " required />
+                <label>Senha</label>
+            </div>
+        
+
+
+ 
+
+
+   
+    
+
+    
+    
+
+   
+
+
+</body>
+
+</html>
