@@ -1,0 +1,157 @@
+   body{
+       background-color: #cfcfcf;
+       height: 100vh;
+       display: flex;
+       
+   }
+   
+   
+   
+   .conteudoDash{
+        /* margin-right: auto;
+        margin-left: auto; */
+        width:100%;
+        height:100%;
+        /* min-height: 1300px; */
+        background-color: red;
+        /* margin-top: 100px; */
+    }
+    
+    #conteudoEsquerda{
+        /* background-color: black; */
+        background-color: #ffffff;
+        width:20%;
+        height: 100%;
+        float: left;
+        
+    }
+    .imagemDash{
+        width: 700px;
+        height: 430px;
+        margin-left: 65px;
+        margin-top:100px ;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color:red; */
+    }
+
+    .imgDash{
+        width:inherit;
+        height: inherit;
+    }
+
+    #conteudoDireita{
+        /* background-color: red; */
+        background-color: #f4f4f4;
+        width:80%;
+        height:inherit;
+        float: left;
+        
+    }
+
+    .tituloDash{
+        width: 100%;
+        height: 100px;
+        /* background-color: lawngreen; */
+        margin-top: 10px;
+    }
+    
+    h2{
+        font-size: 3em;
+        font-family: verdana;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .menuDrop{
+        width: 100%;
+        height: 480px;
+        /* background-color: lightcoral; */
+        margin-top:180px;
+        padding-top: 10px;
+        padding-left: 10px;
+        
+    }
+/* ul{
+    width: 50px;
+   font-size: 4.2em;
+} */
+    li{
+        width: inherit;
+        height: 100px;
+        list-style: none;
+        font-size: 4.2em;
+        margin-top: 12px;
+        font-family: verdana;
+        padding-left: 60px;
+        padding-bottom: 50px;
+        /* list-style-image:url(../img/moedaLi.PNG); */
+       
+    }
+
+    li:hover{
+        cursor: pointer;
+        background-color: aqua;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+       
+    }
+
+    /* li::marker{
+      font-size:4.2em;
+
+      } */
+
+
+      .menuDeitado{
+          width: 100%;
+          height: 10%;
+          
+          /* background-color: red; */
+      }
+      #moedasP{
+          width: 300px;
+          padding-top: 50px;
+          padding-left: 30px;
+          height: inherit;
+          margin-left: 500px;
+          margin-bottom: 30px;
+          /* margin-top: 200px; */
+          /* box-shadow: 5px 5px 10px black; */
+          /* background-color: khaki; */
+          float: left;
+      }
+      #imgSetinha{
+        width: 300px;
+        height: inherit;
+          float: left;
+         margin-top: 100px;
+          margin-right: -1000px;
+          /* background-color: blue; */
+      }
+      #imagemSetinha{
+          width: 70px;
+          height: 70px;
+      }
+      h3{
+          font-size: 3em;
+          font-family: verdana;
+      }
+
+      #pp{
+        width: 500px;
+        height: inherit;
+        margin-top: 50px;
+        margin-left: 150px;
+          float: left; 
+      }
+
+      .conteudoTodo{
+          width: 100%;
+          height: auto;
+          overflow:hidden;
+          min-height: 90%;
+          background-color: #ffffff;
+          margin-top: 5px;
+          box-shadow: 5px 5px 10px black;
+      }
