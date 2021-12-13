@@ -31,6 +31,14 @@ header{
    /* background-color:blue; */
  
 }
+.conteudoComentario{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1400px;
+    height: inherit;
+   /* background-color:blue; */
+ 
+}
 
 #logo{
     width: 150px;
@@ -191,11 +199,11 @@ input::placeholder {
         display: flex;
         margin-left: 10px;
         margin-top: 12px;
-       background-color: aqua;
+       /* background-color: aqua; */
     }
     
     .cards:hover{
-         /* transform: scale(1.1); */
+         transform: scale(1.1);
         transition: 1s;
           cursor: pointer;
         
@@ -203,8 +211,8 @@ input::placeholder {
     
     
     .imagemCards{
-        width:inherit;
-        height: 220px;
+        width: 320px;
+        height: 200px;
         /* background-attachment: fixed;
         background-position: center; */
     }
@@ -259,6 +267,106 @@ input::placeholder {
         color: #ffffff;
         height: 30px;
         border-radius: 300px;
-        background-color: blue;
+        background-color: #0074B5;
         margin-left: 30px;
+    }
+
+
+    /*Estilo do usuario logado  */
+    .perfil{
+        width: 60px;
+        height: 60px;
+        /* background-color: khaki; */
+        border-radius: 500px;
+        float: right;
+        margin-top: 4px;
+        margin-right: 50px;
+    }
+
+    .imagemPerfil{
+        width: inherit;
+        height: inherit;
+        border-radius: 500px;
+    }
+
+    .imagemPerfil{
+        cursor: pointer;
+        background-color: slategrey;
+    }
+
+    .comentarios{
+         /* background-color:red; */
+         min-height: 1500px;
+         height: auto;
+         width: 1400px;
+         overflow: auto;
+    }
+    h1{
+        font-size: 2em;
+        font-family: verdana;
+        text-transform: uppercase;
+    }
+
+    .tituloComentarios{
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+
+    .comentarioAluno{
+        min-height: 300px;
+        height: auto;
+        width: 600px;
+        /* background-color: springgreen; */
+        overflow: auto;
+        margin-top: 50px;
+        margin-left: 25px;
+        float: left;
+    }
+    .imagemAluno{
+        width: 170px;
+        height: 170px;
+        /* background-color: tan; */
+        margin-left: 15px;
+        margin-top: 20px;
+        float: left;
+    }
+    #imgAluno{
+        width: inherit;
+        height: inherit;
+    }
+    .nomeAluno{
+        width: 380px;
+        min-height: 180px;
+        height: auto;
+        /* background-color: tomato; */
+        float: left;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    h3{
+        font-size: 1.8em;
+        padding-top: 25px;
+        padding-left: 3px;
+        font-family: verdana;
+        color: black;
+    }
+
+    .todoComentario{
+        width: inherit;
+        min-height: inherit;
+        height: auto;
+        /* background-color:chocolate; */
+        /* top: 50px; */
+        clear: both;
+    }
+
+    p{
+        width: inherit;
+        min-height: inherit;
+        height: auto;
+        font-size: 1.8em;
+        font-family: verdana;
+        padding-top: 10px;
+        padding-left: 15px;
+        color: black;
     }
