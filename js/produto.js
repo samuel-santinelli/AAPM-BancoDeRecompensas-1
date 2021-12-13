@@ -43,6 +43,22 @@ class Produto {
 	}
 
 	/**
+	 * @param {Produto} produto
+	 * @returns {Promise<Number>}
+	 */
+	static atualizar(produto){
+		return ajax.doPut(`${this.#url}/${produto.id}`)
+	}
+
+	/**
+	 * @param {number} id
+	 * @returns {Promise<Number>}
+	 */
+	static deletar(id){
+		return ajax.doDelete(`${this.#url}/${id}`)
+	}
+
+	/**
 	 * 
 	 * @param {number} id 
 	 * @returns {Promise<Produto>}
