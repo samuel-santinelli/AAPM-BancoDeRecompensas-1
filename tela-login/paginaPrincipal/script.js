@@ -4,4 +4,4 @@ import Usuario from '../../js/usuarios.js'
 
 const produtos = await Produto.listar()
 
-console.log(produtos)
+document.getElementById("produtos").replaceChildren(...Produto.listaCards(produtos))
