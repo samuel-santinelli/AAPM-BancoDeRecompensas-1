@@ -10,7 +10,7 @@ const doGet = (url) => {
 
 /**
  * @param {string} url 
- * @param {Object|Array} object 
+ * @param {(Object|Array|Number)} object 
  * @return {Promise<Number>}
  */
 const doPost = (url, object) => {
@@ -23,10 +23,11 @@ const doPost = (url, object) => {
 
 /**
  * @param {string} url 
- * @param {Object|Array} object 
+ * @param {(Object|Array|Number)} object 
  * @return {Promise<Number>}
  */
 const doPut = (url, object) => {
+	doPo
 	return fetch(url, {
 		method: 'put', 
 		body: object, 

@@ -9,13 +9,22 @@ class Produto{
 	 */
 	static #url = "https://backendleonid.herokuapp.com/aapm/v1/produtos/"
 
-	constructor(){
-		this.id = 0;
-		this.nome = '';
-		this.valor = 0.0;
-		this.descricao = '';
-		this.imagem = '';
-		this.avaliacao = 0;
+	/**
+	 * @param {number} id
+	 * @param {string} nome
+	 * @param {number} valor
+	 * @param {string} descricao
+	 * @param {string} imagembase64 Uma imagem depois que passou em FileReader()
+	 * @param {number} avaliacao
+	 * @constructor
+	 */
+	constructor(id, nome, valor, descricao, imagembase64, avaliacao){
+		this.id = id;
+		this.nome = nome
+		this.valor = valor;
+		this.descricao = descricao;
+		this.imagem = imagembase64;
+		this.avaliacao = avaliacao;
 	}
 
 	/**
@@ -27,7 +36,7 @@ class Produto{
 	}
 
 	/**
-	 * @returns {Promise<Array<Produto>>}
+	 * @returns {Promise<Produto[]>}
 	 */
 	static listar(){
 		return ajax.doGet(this.#url)

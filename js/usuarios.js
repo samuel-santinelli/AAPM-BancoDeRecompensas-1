@@ -9,17 +9,24 @@ class Usuario{
 	 */
 	static #url = "https://backendleonid.herokuapp.com/aapm/v1/usuarios/"
 
-	constructor(){
-		this.id = 0;
-		this.nome = '';
-		this.email = '';
-		this.senha = '';
-		this.matricula = 0;
-		this.moedas = 0;
-		/**
-		 * @type {Array<Number>}
-		 */
-		this.produtosComprados = []
+	/**
+	 * @param {number} id
+	 * @param {string} nome
+	 * @param {string} email
+	 * @param {string} senha
+	 * @param {number} matricula
+	 * @param {number} moedas
+	 * @param {number[]} produtosComprados
+	 * @constructor
+	 */
+	constructor(id, nome, email, senha, matricula, moedas, produtosComprados){
+		this.id = id;
+		this.nome = nome
+		this.email = email
+		this.senha = senha
+		this.matricula = matricula;
+		this.moedas = moedas;
+		this.produtosComprados = produtosComprados;
 	}
 
 	/**
@@ -31,7 +38,7 @@ class Usuario{
 	}
 
 	/**
-	 * @returns {Promise<Array<Usuario>>}
+	 * @returns {Promise<Usuario[]>}
 	 */
 	static listar(){
 		return ajax.doGet(this.#url)
