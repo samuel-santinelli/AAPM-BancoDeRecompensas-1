@@ -1,6 +1,12 @@
+   *{
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+   }
+   
    body{
        background-color: #cfcfcf;
-       height: 100vh;
+       min-height: 100%;
        display: flex;
        
    }
