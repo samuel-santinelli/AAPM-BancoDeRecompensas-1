@@ -2,7 +2,7 @@
 
 import * as ajax from "./consumo.js"
 
-class Produto{
+class Produto {
 	/**
 	 * @private
 	 * @type {string}
@@ -18,7 +18,7 @@ class Produto{
 	 * @param {number} avaliacao
 	 * @constructor
 	 */
-	constructor(id, nome, valor, descricao, imagembase64, avaliacao){
+	constructor(id, nome, valor, descricao, imagembase64, avaliacao) {
 		this.id = id;
 		this.nome = nome
 		this.valor = valor;
@@ -31,14 +31,14 @@ class Produto{
 	 * @param {Produto} produto 
 	 * @returns {Promise<Number>}
 	 */
-	static gravar(produto){
+	static gravar(produto) {
 		return ajax.doPost(this.#url, produto)
 	}
 
 	/**
 	 * @returns {Promise<Produto[]>}
 	 */
-	static listar(){
+	static listar() {
 		return ajax.doGet(this.#url)
 	}
 
@@ -47,8 +47,49 @@ class Produto{
 	 * @param {number} id 
 	 * @returns {Promise<Produto>}
 	 */
-	static buscar(id){
-		return this.listar().then( produtos => produtos.find(val => val.id === id))
+	static buscar(id) {
+		return this.listar().then(produtos => produtos.find(val => val.id === id))
+	}
+
+	/**
+	 * @param {Produto[]} produtos
+	 * @return {Element[]}
+	 */
+	static listaCards(produtos) {
+		return produtos.map(
+			(vs) => {
+				const element = document.createElement("div");
+
+				element.innerHTML =
+				`<div class="imgCard">
+                    <img class="imagemCards" alt="${vs.nome}">
+                </div>
+                <div class="adicionar">
+                    <input type="button" value="+Adicionar" class="btnAdicionar">
+                </div>
+                <div class="preco">
+                    <div class="moeda">
+                        <img src="img/moeda.PNG" class="imgMoeda"> 
+                    </div>
+                    <div class="precoMoeda">
+						${vs.valor.toFixed(2)}
+                    </div>
+                </div>
+                <div class="nomeProduto">
+                    <h3>${vs.nome}</h3>
+                </div> 
+                <div class="estrelinha">
+                    <img src="img/estrelinha.PNG">
+                </div>`
+
+				element.class = "cards"
+				element.querySelector(".imagemCards").src = vs.imagem
+
+				return element;
+			}
+
+
+		)
 	}
 }
 
