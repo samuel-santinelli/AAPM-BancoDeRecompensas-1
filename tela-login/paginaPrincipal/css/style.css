@@ -279,7 +279,7 @@ input::placeholder {
         /* background-color: khaki; */
         border-radius: 500px;
         float: right;
-        margin-top: 4px;
+        margin-top: -20px;
         margin-right: 50px;
     }
 
@@ -372,6 +372,91 @@ input::placeholder {
     }
 
 
-    /* Estilo da dash */
+    #caixas{
+        width:200px;
+        height: 70px;
+        margin-top: -10px;
+    /*     background-color: RGBA( 3, 2, 2, 80%);*/
+        /* background-color:chocolate; */
+        float: right;
+        margin-top: -65px;
+    }
+    /* .conteudoMenu{
+        margin-right: auto;
+       margin-left: auto;
+       width: 2000px;
+       height: inherit;
+   /*    background-color:blue;
+   }*/
+
+   #menuHam{
+    width: 100px;
+    height:inherit;
+/*    background-color: red;*/
+    margin-left: 10px;
+    padding-top: 5px;
+}
+#menuhamburg{
+    background-color:rgb(237, 237, 237);
+    /* border-radius: 30px; */
+    width: 200px;
+    margin-top: -1300px;
+    height: 300px;
+    position: absolute;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateY(1320px);
+}
+
+input[type="checkbox"]{
+   display: none;
+}
+#ulHamburg{
+    list-style: none;
+   margin-top: 60px;
+    position: absolute;
+    width: 100%;
+}
+
+#ulHamburg{
+    font-size: 1.1em;
+    font-family: verdana;
+}
+
+.linkMenu{
+/*    background-color: red;*/
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 5px;
+    color: black;
+}
+
+.linkMenu:hover{
+    background-color: rgb(176,224,230);
+    color: #000;
+}
+
+#lblHamburg{
+/*    background-color: aliceblue;*/
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    color: black;
+  
+}
+
+#imagemPessoa{
+    width: 30px;
+    height: 50px;
+    border-radius: 500px;
+    float: left;
+    padding-top: 17px;
+    padding-left: 3px;
+}
 
  
