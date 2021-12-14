@@ -7,29 +7,33 @@
 
 
 body{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     /* background-color: khaki; */
-  
+    display: flex;
 }
 
 .conteudoDireita{
-    width: 20vw;
-    height: 100vh;
-    /* background-color: lightcoral; */
+    flex: 4 0 90%;
+    height: 100%;
+     background-color: lightcoral; 
     float: left;
 }
 
 .conteudoEsquerda{
-    width: 80vw;
-    height: 100vh;
+    flex: 0 1 10%;
+    width: 8;
+    height: 100%;
     /* background-color: blue; */
     float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imgApm{
-    width: 50vw;
-    height: 30vh;
+    width: 50%;
+    height: 30%;
     /* background-color: lightgreen; */
    
 
@@ -38,8 +42,8 @@ body{
 
 
 #imgDash{
-    width:37vh;
-    height: 30vh;
+    width:37%;
+    height: 30%;
   
 
     
@@ -53,12 +57,6 @@ body{
     margin-top: 10px;
 }
 
-h2{
-    font-size: 3em;
-    font-family: verdana;
-    text-align: center;
-    padding-top: 15px;
-}
 .menuDrop{
     width: 100%;
     height: 480px;
@@ -140,6 +138,7 @@ li:hover{
   }
 
   .conteudoTodo{
+      display: block;
       width: 100%;
       height: auto;
       overflow:hidden;
