@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/cadastro.css">
+    <script src="src/validacao-senha.js" defer></script>
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <main>
+        <!-- Conteudo do banner AAPM -->
+        <div id="content-logo">
+        <img src="pictures/LogoAAPM.png" id="logotipo-aapm">
+        <h1>Cadastre-se já</h1>
+            <!-- Conteudo das Inputs -->
+            <div id="content-inputs">
+                <div id="nome-email">
+                    <input type="text" placeholder="Nome" >
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="senhas">
+                    <input type="password" placeholder="Senha" id="senhaForca" onkeyup="validarSenhaForca()" required>
+                  
+                    <input type="password" placeholder="Confirmar Senha" required>
+                    
+                </div>
+                <div id="impSenha"></div>
+                <div id="impForcaSenha"></div>
+                <div id="erroSenhaForca"></div>
+            </div>
+            <div id="content-button">
+                <button>Cadastrar</button>
+            </div>
+
+            <div id="content-footer">
+            <p>Já tem uma conta? <p2>Entre agora</p2></p>
+        </div>
+    </div>   
+
+  
+    
+</body>
+</html>
