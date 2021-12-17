@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,10 +16,10 @@
         .hoshi {
             position: relative;
             padding: 15px 0 0;
-            margin-top: 15px;
+            margin-top: 25px;
             float: left;
-            margin-left: 200px;
-            margin-bottom: 80px;
+            margin-left: 160px;
+            margin-bottom: 75px;
             
            
         }
@@ -34,6 +34,7 @@
             padding: 7px 0;
             background: transparent;
             transition: border-color 0.2s;
+            z-index: 2;
             
         }
 
@@ -43,7 +44,7 @@
         }
 
         #nameC{
-            width: 700px;
+            width: 675px;
         }
 
         .hoshi > :placeholder-shown ~ label {
@@ -58,7 +59,7 @@
             display: block;
             transition: 0.2s;
             font-size: 1rem;
-            z-index: -1;
+            z-index: 1;
         }
 
         .hoshi > :focus {
@@ -118,7 +119,7 @@
 
 #dados{
     margin-top: 20px;
-   margin-left: 780px;
+   margin-left: 650px;
    
     
 }
@@ -128,8 +129,78 @@
 
 }
 
+/* #tooBar{
+    width: 100%;
+    height: 68px;
+    background-color: #C4C4C4;
+    
+}
 
-        
+#entrega{
+     font-size: 1.3em;
+    padding-top: 24px;
+    padding-right: 1600px;
+   float: right;
+} */
+
+#entrega{
+     font-size: 1.3em;
+    padding-top: 24px;
+    padding-right: 1350px;
+   float: right;
+}
+
+
+#tooBar{
+    width: 1600px;
+    height: 68px;
+    background-color: #C4C4C4;
+    margin: auto;
+    
+}
+
+#salvar{
+    width:144px;
+    height:59px;
+    background-color: yellow;
+    margin-top:80px;
+    margin-left:500px;
+    
+    
+}
+
+#cancelar{
+    width:144px;
+    height:59px;
+    background-color: rgb(145, 68, 68);
+    margin-top:-60px;
+    margin-left:100px;
+ 
+    
+}
+
+#fundo{
+    width: 1600px;
+    height:1200px;
+    background-color:#F4F4F4;/*#F4F4F4;*/
+    padding-top: 109px;
+    box-sizing: border-box;
+    margin:auto;
+    
+    
+}
+
+#card{
+    width:1440px;
+    height: 1000px;
+    background-color:#FFFFFF;
+   margin: auto;
+    /* margin-left:51px;
+    margin-right: 51px; */
+    box-shadow: inset 0px 15px 20px 0px gainsboro;
+    
+}
+
 
     
 
@@ -137,7 +208,13 @@
 </head>
 
 <body>
+       <div id="tooBar">
+        <h1 id="entrega">Editar Perfil:</h1>  
+        </div>
         
+
+        <div id="fundo"> 
+         <div id="card">
         <div id="person">
         <img id="perfil" src="img/imagen.jpeg">  
          </div>
@@ -174,6 +251,16 @@
                 <input type="text"  placeholder=" " required />
                 <label>Senha</label>
             </div>
+
+            <button id="salvar">SALVAR</button>
+            <button id="cancelar">CANCELAR</button>
+
+        </div>
+        </div>
+
+    
+
+            
         
 
 
