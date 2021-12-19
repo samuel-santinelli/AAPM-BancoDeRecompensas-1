@@ -18,3 +18,5 @@ const imageToBase = (arquivo) => {
 		fr.readAsDataURL(arquivo)
 	});
 }
+
+export { imageToBase };

@@ -16,7 +16,7 @@ const doGet = (url) => {
 const doPost = (url, object) => {
 	return fetch(url, {
 		method: 'post', 
-		body: object, 
+		body: JSON.stringify(object), 
 		headers: {'content-type': 'application/json'}
 	}).then( (response) => new Promise( (success, error) => response.ok ? success(response.status) : error(response.status) ))
 }
@@ -27,10 +27,9 @@ const doPost = (url, object) => {
  * @return {Promise<Number>}
  */
 const doPut = (url, object) => {
-	doPo
 	return fetch(url, {
 		method: 'put', 
-		body: object, 
+		body: JSON.stringify(object), 
 		headers: {'content-type': 'application/json'}
 	}).then( (response) => new Promise( (success, error) => response.ok ? success(response.status) : error(response.status) ))
 }

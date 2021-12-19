@@ -32,6 +32,8 @@ class Produto {
 	 * @returns {Promise<Number>}
 	 */
 	static gravar(produto) {
+		delete produto.id;
+		console.log(produto)
 		return ajax.doPost(this.#url, produto)
 	}
 
