@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -27,20 +24,24 @@ body{
 }
 
 #content-logo{
-    height: 230px;
-    width: auto;
+     height: 230px;
+    width: 610px;
     float: right;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 57px;
    
 }
 
 
 #logotipo-aapm{
     height: 230px;
-    width: 260px;
-    float: right;
-    margin-right: 350px;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
 }
 
 h1{
@@ -59,6 +60,8 @@ input{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     padding-bottom: 25px;
+    text-indent: 0.4rem;
+    margin-left: 70px;
 }
 
 .contents-inputs{
@@ -97,4 +100,31 @@ p2{
 p2:hover{
     cursor: pointer;
 
+}
+
+.content-inputs{
+    height: 200px;
+    width: 400px;
+}
+
+
+.content-inputs > input {
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+
+
+.content-inputs > :focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #0074B5, #0074B5);
+    border-image-slice: 1;
 }

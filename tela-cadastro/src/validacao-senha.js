@@ -23,22 +23,27 @@ function validarSenhaForca(){
     }
 
     exibirForca(forca);
+    
 }
 
 
 function exibirForca(forca){
     document.getElementById("impForcaSenha");
+    document.getElementById("barra");
 
-    if(forca < 30) {
-        document.getElementById("erroSenhaForca").innerHTML = "<span style='color: #ff0000'>Sua senha está muito fraca</span>";
-    }else if((forca >= 30) && (forca < 50)) {
-        document.getElementById("erroSenhaForca").innerHTML = "<span style='color: #FFD700'>Sua senha está aceitavel</span>";
+    if((forca >= 30) && (forca < 50)) {
+        document.getElementById("erroSenhaForca").innerHTML = "<div class='barra-media'><span style='color: #FFD700'>Sua senha está média</span></div>";
     }else if((forca >= 50) && (forca < 70)) {
-    document.getElementById("erroSenhaForca").innerHTML = "<span style='color: #008000 '>Sua senha está Forte</span>";
+    document.getElementById("erroSenhaForca").innerHTML = "<div class='barra-forte'><span style='color: #008000'>Sua senha está forte</span></div>";
     }else if((forca >= 70) && (forca < 90)) {
-    document.getElementById("erroSenhaForca").innerHTML = "<span style='color: #90EE90'>Sua senha está muito forte</span>";
+    document.getElementById("erroSenhaForca").innerHTML = "<div class='barra-muito-forte'><span style='color: #90EE90'>Sua senha está muito forte</span></div>";
+    }else if((forca >= 20) && (forca < 25)) {
+    document.getElementById("erroSenhaForca").innerHTML = "<div class='barra'><span style='color: #ff0000 '>Sua senha está muito fraca</span></div>";
+    }
 }
-}
+
+
+
 
 
 

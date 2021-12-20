@@ -132,7 +132,7 @@ placeholder{
 }
 
 
-#nome-email{
+.nome-email{
     height: 200px;
     width: 100%;
     display: flex;
@@ -198,3 +198,126 @@ placeholder{
 #senhaForca{
     color: #B1B1B1;
 }
+
+.nome-email > input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+
+.nome-email > input::placeholder {
+    font-weight: normal;
+    opacity: 40%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.nome-email > :placeholder-shown ~ label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+    
+}
+
+.nome-email > label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    z-index: -1;
+}
+
+.nome-email > :focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #0074B5, #0074B5);
+    border-image-slice: 1;
+}
+
+.barra{
+    height: 5px;
+    background-color: #f00;
+    animation-name: barra;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes barra{
+        from{
+            width: 0;
+            
+        }
+
+        to{
+            width: 35%;
+            
+        }
+}
+
+
+.barra-media{
+    height: 5px;
+    background-color: #FFD700;
+    animation-name: barra;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.barra-forte{
+    height: 5px;
+    background-color: #008000;
+    animation-name: barra;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.barra-muito-forte{
+    height: 5px;
+    background-color: #90EE90;
+    animation-name: barra;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+
+
+ /* @media screen and (min-width: 450px){
+    main{
+        width: 60vh;
+        
+    }
+
+    #logotipo-aapm{
+        margin-right: 100px;
+    }
+
+    #content-inputs{
+        width: 400px;
+        
+    }
+
+    #nome-email{
+        width: 400px;
+    }
+
+    input{
+        width: 190px;
+    }
+
+    button{
+        margin-right: 70px;
+    }
+
+    #content-footer{
+        margin-right: 35px;
+    }
+}  */
