@@ -179,15 +179,18 @@ input::placeholder {
     box-shadow:0px 3px 13px #bfbfbf;
     background-image: url(../img/pesquisar.PNG);
     background-repeat: no-repeat;
+    padding-left: 40px;
+    color: #000;
+    font-size: 1.0rem;
    
 }
 #sltFiltro{
     width: 100px;
     height: 50px;
-    /* background-color: fuchsia; */
     float: right;
     margin-right: 100px;
     padding-right: 100px;
+  
 }
 
 #filtro{
@@ -198,9 +201,14 @@ input::placeholder {
     height: 20px;
     margin-top: 15px;
     border:none;
-    
     box-shadow:0px 3px 13px #bfbfbf;
 }
+
+#filtro:hover{
+    cursor: pointer;
+  
+}
+
 
 #produtos{
        /* background-color:red; */
@@ -233,7 +241,7 @@ input::placeholder {
         display: flex;
         margin-left: 10px;
         margin-top: 12px;
-       /* background-color: aqua; */
+
     }
     
     .cards:hover{
@@ -247,8 +255,7 @@ input::placeholder {
     .imagemCards{
         width: 320px;
         height: 200px;
-        /* background-attachment: fixed;
-        background-position: center; */
+        background-size: cover;
     }
     
     
@@ -474,12 +481,17 @@ input::placeholder {
         cursor: pointer;
     }
 
-    .conteudoMenu{
+    #caixas{
+        position: relative;
+    }
+
+    .conteudoMenu {
         margin-right: auto;
        margin-left: auto;
        width: 2000px;
        height: inherit;
-   /*    background-color:blue;*/
+    
+   
    }
    
    
@@ -499,9 +511,9 @@ input::placeholder {
    #menuHam{
        width: 100px;
        height:inherit;
-   /*    background-color: red;*/
        margin-left: 1200px;
-     /* margin-top: 40px; */
+       position: absolute;
+       z-index: 999;
    }
    #menuhamburg{
        background-color: white;
@@ -538,11 +550,16 @@ input::placeholder {
        padding-left: 5px;
        padding-right: 5px;
        color: black;
+      
    }
    
    .linkMenu:hover{
-       background-color: rgb(176,224,230);
        color: #000;
+       box-shadow:0px 20px 15px #cfcfcf;
+       border: solid 0.5px #cfcfcf ;
+        background-color: #fc9797;
+        color: #fff;
+       
    }
    
    #lblHamburg{
