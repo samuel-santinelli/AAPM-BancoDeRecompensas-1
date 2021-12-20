@@ -556,9 +556,8 @@ input::placeholder {
    .linkMenu:hover{
        color: #000;
        box-shadow:0px 20px 15px #cfcfcf;
-       border: solid 0.5px #cfcfcf ;
-        background-color: #fc9797;
-        color: #fff;
+       border: solid 0px #cfcfcf ;
+    
        
    }
    
