@@ -9,7 +9,7 @@
   <tr>
     <td align="center">
       <a href="https://github.com/samuel-santinelli">
-        <img src="https://github.com/samuel-santinelli.png" height="120px" width="120px"<br>
+        <img src="https://github.com/samuel-santinelli.png" height="100px" width="100px"<br>
         <sub>
           <b>Samuel</b>
         </sub>
@@ -17,7 +17,7 @@
     </td>
     <td align="center">
       <a href="https://github.com/1chard">
-        <img src="https://github.com/1chard.png" height="120px" width="120px"<br>
+        <img src="https://github.com/1chard.png" height="100px" width="100px"<br>
         <sub>
           <b>Richard Cutrim </b>
         </sub>
@@ -25,7 +25,7 @@
     </td>
     <td align="center">
       <a href="https://github.com/JonatasNs1">
-        <img src="https://github.com/JonatasNs1.png" height="120px" width="120px"<br>
+        <img src="https://github.com/JonatasNs1.png" height="100px" width="100px"<br>
         <sub>
           <b>Jonatas Santos</b>
         </sub>
@@ -33,7 +33,7 @@
     </td>
     <td align="center">
       <a href="https://github.com/thiagoJoseB">
-        <img src="https://github.com/thiagoJoseB.png" height="120px" width="120px"<br>
+        <img src="https://github.com/thiagoJoseB.png" height="100x" width="100px"<br>
         <sub>
           <b>Thiago José</b>
         </sub>
