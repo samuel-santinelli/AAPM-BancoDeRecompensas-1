@@ -2,6 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
         .hoshi {
@@ -58,7 +59,7 @@
             padding-bottom: 6px;
             font-weight: 700;
             border-width: 3px;
-            border-image: linear-gradient(to right, red, blue);
+            border-image: linear-gradient(to right, red, red);
             border-image-slice: 1;
         }
 
@@ -153,21 +154,28 @@
 #salvar{
     width:144px;
     height:59px;
-    background-color: yellow;
+    background-color: #70D174;
     margin-top:80px;
     margin-left:500px;
-    
-    
+    font-weight: bold;
+    box-shadow:0px 3px 13px #cfcfcf;
+    border: 0;
 }
 
 #cancelar{
     width:144px;
     height:59px;
-    background-color: rgb(145, 68, 68);
+    background-color: #F40A0A;
     margin-top:-60px;
     margin-left:100px;
- 
-    
+    box-shadow:0px 3px 13px #cfcfcf;
+    border: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 #fundo{
