@@ -282,6 +282,35 @@ input::placeholder {
         margin-top: 4px;
         margin-right: 50px;
     }
+    .qntdMoedas{
+        width: 150px;
+        height: 50px;
+        /* background-color: red; */
+        float: left;
+        margin-left: -350px;
+        margin-top:10px;
+    }
+
+    #fotoValor{
+        width: 50px;
+        height: 45px;
+        /* background-color: blue; */
+        float: left;
+    }
+    .imagemValor{
+        width: inherit;
+        height: inherit;
+    }
+    #valorMoedas{
+        width: 90px;
+        height: 50px; 
+        /* background-color: brown; */
+        float: left; 
+        color: khaki;
+        padding-left: 13px;
+        padding-top: 10px;
+        font-size: 1.8em;
+    }
 
     #imagemPerfil{
         width: 60px;
