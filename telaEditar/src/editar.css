@@ -1,0 +1,195 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+        .hoshi {
+            position: relative;
+            padding: 15px 0 0;
+            margin-top: 25px;
+            float: left;
+            margin-left: 160px;
+            margin-bottom: 75px;
+            
+           
+        }
+
+        .hoshi > input {
+            font-family: inherit;
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid gray;
+            outline: 0;
+            font-size: 1.3rem;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+            z-index: 2;
+            
+        }
+
+        .hoshi > input::placeholder {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        #nameC{
+            width: 675px;
+        }
+
+        .hoshi > :placeholder-shown ~ label {
+            font-size: 1.3rem;
+            cursor: text;
+            top: 20px;
+        }
+
+        .hoshi > label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            z-index: 1;
+        }
+
+        .hoshi > :focus {
+
+            padding-bottom: 6px;
+            font-weight: 700;
+            border-width: 3px;
+            border-image: linear-gradient(to right, red, blue);
+            border-image-slice: 1;
+        }
+
+        .hoshi > [placeholder]:focus ~ * {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: red;
+            font-weight: 700;
+        }
+
+        /* reset input */
+        .hoshi > [placeholder]:required,
+        .hoshi > [placeholder]:invalid {
+            box-shadow: none;
+        }
+       
+
+        
+
+
+
+#person{
+    padding-top: 50px;
+     width: 250px;
+    height: 250px;
+     margin: auto;
+     border-radius: 500px;
+   
+    
+}
+
+#perfil{
+    width: inherit;
+    height: inherit;
+    background-color: blue;
+    border-radius: 500px;
+   margin: auto;
+    position:relative;
+    
+   
+    
+    
+}
+
+
+
+#dados{
+    margin-top: 20px;
+   margin-left: 650px;
+   
+    
+}
+#edita{
+    border: 0;
+    margin-top: 5px;
+
+}
+
+/* #tooBar{
+    width: 100%;
+    height: 68px;
+    background-color: #C4C4C4;
+    
+}
+
+#entrega{
+     font-size: 1.3em;
+    padding-top: 24px;
+    padding-right: 1600px;
+   float: right;
+} */
+
+#entrega{
+     font-size: 1.3em;
+    padding-top: 24px;
+    padding-right: 1350px;
+   float: right;
+}
+
+
+#tooBar{
+    width: 1600px;
+    height: 68px;
+    background-color: #C4C4C4;
+    margin: auto;
+    
+}
+
+#salvar{
+    width:144px;
+    height:59px;
+    background-color: yellow;
+    margin-top:80px;
+    margin-left:500px;
+    
+    
+}
+
+#cancelar{
+    width:144px;
+    height:59px;
+    background-color: rgb(145, 68, 68);
+    margin-top:-60px;
+    margin-left:100px;
+ 
+    
+}
+
+#fundo{
+    width: 1600px;
+    height:1200px;
+    background-color:#F4F4F4;/*#F4F4F4;*/
+    padding-top: 109px;
+    box-sizing: border-box;
+    margin:auto;
+    
+    
+}
+
+#card{
+    width:1440px;
+    height: 1000px;
+    background-color:#FFFFFF;
+   margin: auto;
+    /* margin-left:51px;
+    margin-right: 51px; */
+    box-shadow: inset 0px 15px 20px 0px gainsboro;
+    
+}
+
+
