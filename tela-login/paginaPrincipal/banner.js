@@ -1,5 +1,5 @@
 
-let fotos = ["banner1.jpg", "banner2.jpg", "banner3.jpg"];
+let fotos = ["bannerEscolar.jpg", "bannerEscolar2.jpg", "bannerEscolar3.jpg"];
 
 
 
