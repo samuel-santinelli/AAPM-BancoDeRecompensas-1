@@ -90,16 +90,18 @@ button:hover{
 #content-footer{
     margin-left: 200px;
     padding-top: 300px;
+    
 }
 
 p2{
     color: #0074B5;
     font-weight: bold;
+    outline: none;
 }
 
 p2:hover{
     cursor: pointer;
-
+    outline: none;
 }
 
 .content-inputs{
@@ -127,4 +129,9 @@ p2:hover{
     border-width: 3px;
     border-image: linear-gradient(to right, #0074B5, #0074B5);
     border-image-slice: 1;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
 }

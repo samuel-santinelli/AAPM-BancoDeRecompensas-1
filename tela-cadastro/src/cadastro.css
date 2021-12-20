@@ -321,3 +321,10 @@ placeholder{
         margin-right: 35px;
     }
 }  */
+
+a{
+
+        outline: none;
+        text-decoration: none;
+
+}
