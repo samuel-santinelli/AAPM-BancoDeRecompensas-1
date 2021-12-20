@@ -283,13 +283,14 @@ input::placeholder {
         margin-right: 50px;
     }
 
-    .imagemPerfil{
-        width: inherit;
-        height: inherit;
+    #imagemPerfil{
+        width: 60px;
+        height: 60px;
         border-radius: 500px;
+        margin-top: -13px;
     }
 
-    .imagemPerfil{
+    #imagemPerfil{
         cursor: pointer;
         background-color: slategrey;
     }
@@ -372,6 +373,124 @@ input::placeholder {
     }
 
 
-    /* Estilo da dash */
+ /* Menu */
+ #menu{
+    /*    background-color: darkgoldenrod;*/
+        width: 950px;
+        height:inherit;
+        float: left;
+        margin-left: 10px;
+    /*    margin-left: 220px;*/
+    }
+    
+    
+    #listaMenu{
+        width:inherit;
+        height:inherit;
+    /*    background-color: fuchsia;*/
+    }
+    
+    #listaMenu li{
+        width: 190px;
+        height: 70px;
+        list-style: none;
+        float: left;
+    /*    background-color: darkgrey;*/
+        padding-top: 33px;
+        padding-left: 18px;
+        color:aliceblue;
+         font-family: verdana;
+        letter-spacing: 4px;
+        font-size: 1.2em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #listaMenu li:hover{
+    /*    background-color: chocolate;*/
+        color: chocolate;
+        cursor: pointer;
+    }
 
+    .conteudoMenu{
+        margin-right: auto;
+       margin-left: auto;
+       width: 2000px;
+       height: inherit;
+   /*    background-color:blue;*/
+   }
+   
+   
+   
+   #imgHamburg{
+       width: 60px;
+       height: 40px;
+       padding-left: 15px;
+       padding-top: -10px;
+   }
+   
+   #imgHamburg:hover{
+       color: aliceblue;
+       cursor: pointer;
+   }
+   
+   #menuHam{
+       width: 100px;
+       height:inherit;
+   /*    background-color: red;*/
+       margin-left: 1200px;
+     /* margin-top: 40px; */
+   }
+   #menuhamburg{
+       background-color: white;
+       width: 240px;
+       margin-top: -1320px;
+       height: 300px;
+       position: absolute;
+    
+   }
+   input[type="checkbox"]:checked ~ nav{
+       transform: translateY(1320px);
+   }
+   
+   input[type="checkbox"]{
+      display: none;
+   }
+   #ulHamburg{
+       list-style: none;
+      margin-top: 60px;
+       position: absolute;
+       width: 100%;
+   }
+   
+   #ulHamburg{
+       font-size: 1.1em;
+       font-family: verdana;
+   }
+   
+   .linkMenu{
+   /*    background-color: red;*/
+       display: block;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       padding-left: 5px;
+       padding-right: 5px;
+       color: black;
+   }
+   
+   .linkMenu:hover{
+       background-color: rgb(176,224,230);
+       color: #000;
+   }
+   
+   #lblHamburg{
+   /*    background-color: aliceblue;*/
+       padding: 15px;
+       position: absolute;
+       z-index: 1;
+   }
+   a{
+       text-decoration: none;
+       color: black;
+     
+   }
  
