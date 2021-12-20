@@ -6,7 +6,28 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="banner.js" defer> </script>
+	<script type="module"> 
+		import {PromisedImageBanner} from "../js/banner.js"
+
+		const banner = new PromisedImageBanner(document.querySelector(".banner > #container"))
+
+
+		
+		document.querySelector(".banner > #right").addEventListener("click", () => {
+			banner.setCSS({transition: "transform 1s 0s"});
+			banner.waitAndMoveRight(1000).then( () => {
+				banner.setCSS({transition: "none"});
+			})
+		})
+
+		document.querySelector(".banner > #left").addEventListener("click", () => {
+			banner.setCSS({transition: "transform 1s 0s"});
+			banner.waitAndMoveLeft(1000).then( () => {
+				banner.setCSS({transition: "none"});
+			})
+		})
+		
+	</script>
 	<script type="module" src="teste.js"></script>
 	<title>Usuario logado</title>
 </head>
@@ -59,11 +80,14 @@
             </div>
 		</div>
 	</header>
-	<div class="banner">
-		<div class="conteudoBanner">
-			<img src="img/bannerESCOLAR3.jpg" class="imagem">
+	<div class="banner" style="overflow: hidden;">
+		<div id='left'><<</div>
+		<div id='container'>
+			<img src="img/bannerESCOLAR3.jpg" class="">
+			<img src="img/bannerESCOLAR2.jpg" class="">
+			<img src="img/bannerESCOLAR.jpg" class="">
 		</div>
-
+		<div id='right'>>></div>
 	</div>
 
 	<div id="campoPesquisa">
