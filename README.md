@@ -11,7 +11,7 @@
       <a href="https://github.com/samuel-santinelli">
         <img src="https://github.com/samuel-santinelli.png" width="100px"<br>
         <sub>
-          <b>Samuel Santinelli</b>
+          <b>Samuel</b>
         </sub>
       </a>
     </td>
@@ -47,3 +47,10 @@
  <a href="https://github.com/fernandoleonid">
         <img src="https://github.com/fernandoleonid.png" width="100px"<br>
  </a>
+ 
+ ### Link do Design 
+ > Design feito pela ferramenta FIGMA no qual cada integrante utilizou para projetar o desgin do site.
+   <a href="https://www.figma.com/file/N0WCOSSakYfAPx05ySFsjh/Project-AAPM?node-id=92%3A8">
+  <img align="center" alt="Figma" height="40" width="50"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
+ </a>
+ 
