@@ -543,12 +543,7 @@ input::placeholder {
    }
    
    .linkMenu{
-   /*    background-color: red;*/
        display: block;
-       padding-top: 20px;
-       padding-bottom: 20px;
-       padding-left: 5px;
-       padding-right: 5px;
        color: black;
       
    }
@@ -557,12 +552,9 @@ input::placeholder {
        color: #000;
        box-shadow:0px 20px 15px #cfcfcf;
        border: solid 0px #cfcfcf ;
-    
-       
    }
    
    #lblHamburg{
-   /*    background-color: aliceblue;*/
        padding: 15px;
        position: absolute;
        z-index: 1;
