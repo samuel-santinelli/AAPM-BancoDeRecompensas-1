@@ -49,7 +49,7 @@
  </a>
  
  ### Link do Design 
- > Design feito pela ferramenta FIGMA no qual cada integrante utilizou para projetar o desgin do site.
+ > Design feito pela ferramenta FIGMA no qual cada integrante utilizou para projetar o design do site.
    <a href="https://www.figma.com/file/N0WCOSSakYfAPx05ySFsjh/Project-AAPM?node-id=92%3A8">
   <img align="center" alt="Figma" height="40" width="50"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
  </a>
